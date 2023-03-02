@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 
 const ProtectedRoutes = ({ children }) => {
-  const user = useSelector((state) => state.user);
+  const user = useSelector((state) => state.userInfo.user);
   const location = useLocation();
 
   if (!user) {

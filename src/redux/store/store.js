@@ -1,13 +1,18 @@
-import { createStore } from "redux";
-// import { combineReducers } from 'redux';
+import { applyMiddleware, createStore } from "redux";
+import { combineReducers } from "redux";
+import thunk from "redux-thunk";
+import bookingReducer from "../reducers/bookingReducer";
+import flightReducer from "../reducers/flightReducer";
+import travelReducer from "../reducers/travelReducer";
 import userReducer from "../reducers/userReducer";
-// import questionReducer from '../reducers/questionReducer';
 
-// const rootReducer = combineReducers({
-//     userInfo: userReducer,
-//     questionInfo: questionReducer
-// });
+const rootReducer = combineReducers({
+  userInfo: userReducer,
+  travelInfo: travelReducer,
+  flightInfo: flightReducer,
+  bookingInfo: bookingReducer,
+});
 
-const store = createStore(userReducer);
+const store = createStore(rootReducer, applyMiddleware(thunk)); // As calling async function in dispatch
 
 export default store;

@@ -61,9 +61,11 @@ const Login = () => {
       <div className="w-[800px] h-[550px] m-auto">
         <div className="absolute w-[800px] h-[550px] flex  m-auto">
           <div className="relative w-1/2 h-full flex flex-col mt-8 ml-32 shadow">
-            <div className="absolute top-[20%] left-[10%] flex flex-col ">
-              <span className=" text-3xl font-bold text-white ">Airbus</span>
-              <h4 className="text-xl text-white font-bold m-auto mr-10 mt-10">
+            <div className="absolute top-[10%] left-[10%] flex flex-col ">
+              <span className=" text-3xl font-bold text-amber-500  ">
+                Airbus
+              </span>
+              <h4 className="text-xl text-red-800 font-bold m-auto mr-10 mt-4">
                 Book tickets hastlefree and fly with safety
               </h4>
             </div>
@@ -72,7 +74,7 @@ const Login = () => {
                 "https://media.istockphoto.com/id/1354385636/photo/unrecognizable-man-with-bag-and-suitcase-walking-in-airport-rear-view.jpg?b=1&s=170667a&w=0&k=20&c=U-lutKFN46s5_TUzqm_bYhm0FExeUSIaX7ywaQePxCY="
               }
               alt="poster"
-              className="h-[550px] object-cover border-red rounded-md"
+              className="h-[550px] object-cover overflow-hidden border-red rounded-md"
             />
           </div>
 

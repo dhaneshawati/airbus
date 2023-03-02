@@ -1,7 +1,22 @@
 import React from "react";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import Navbar from "../Navbar/Navbar";
+import FlightSearch from "./FlightSearch";
 
 const Search = () => {
-  return <div>Search List</div>;
+  const travelData = useSelector((state) => state.travelInfo);
+  // const { start, end, jDate, rDate, trip, people, travelClass } = travelData;
+
+  useEffect(() => {
+    console.log(travelData);
+  }, []);
+  return (
+    <div>
+      <Navbar />
+      <FlightSearch travelData={travelData} />
+    </div>
+  );
 };
 
 export default Search;

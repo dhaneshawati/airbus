@@ -1,0 +1,10 @@
+.flightlist{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+}

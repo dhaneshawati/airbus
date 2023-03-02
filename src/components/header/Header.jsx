@@ -12,15 +12,22 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { setTravelInfo } from "../../redux/actions/actionCreator";
 
 function Header() {
   const [selectedDate, setSelectedDate] = useState(null);
   const [openOptions, setOpenOptions] = useState(false);
   const [person, setPerson] = useState(1);
-  const navigate = useNavigate();
+  const [source, setSource] = useState("");
+  const [destination, setDestination] = useState("");
+  const [trip, setTrip] = useState("one");
+  const [classType, setClassType] = useState("Economy");
 
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   function handlePerson(operation) {
     if (operation === "i") {
       setPerson((prev) => prev + 1);
@@ -28,6 +35,25 @@ function Header() {
     if (operation === "d" && person > 1) {
       setPerson((prev) => prev - 1);
     }
+  }
+  function handleSearch() {
+    const info = {
+      source,
+      destination,
+      deptDate: selectedDate,
+      returnDate: null,
+      selectTrip: trip,
+      people: person,
+      classType,
+    };
+    // Dispatch
+    dispatch(setTravelInfo(info));
+
+    // setSource("");
+    // setDestination("");
+    // setSelectedDate("");
+
+    navigate("/search");
   }
   return (
     <div className="header">
@@ -68,6 +94,8 @@ function Header() {
               type="text"
               placeholder="Enter source place"
               className="headerSearchInput"
+              onChange={(e) => setSource(e.target.value)}
+              value={source}
             />
           </div>
           <div className="headerSearchItem">
@@ -76,6 +104,8 @@ function Header() {
               type="text"
               placeholder="Enter destination place"
               className="headerSearchInput"
+              onChange={(e) => setDestination(e.target.value)}
+              value={destination}
             />
           </div>
           <div className="headerSearchItem">
@@ -117,7 +147,7 @@ function Header() {
             )}
           </div>
           <div className="headerSearchItem">
-            <button className="headerBtn" onClick={() => navigate("/search")}>
+            <button className="headerBtn" onClick={() => handleSearch()}>
               Search
             </button>
           </div>

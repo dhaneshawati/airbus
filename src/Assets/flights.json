@@ -2,46 +2,46 @@
     {
       "flightNbr": "6E-278",
       "airlineName": "Indigo",
-      "airlineLogo": "https://www.logosurfer.com/wp-content/uploads/2018/03/indigo-logo_0.png",
+      "airlineLogo": "https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/44/26/c9/4426c926-0b3d-0b76-a99c-9d2bd4771b87/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
       "deptTime": "20:00",
       "deptCity": "Mumbai",
       "arivalTime": "22:00",
       "arivalCity": "New Delhi",
-      "noOfStops": "0",
-      "price": "4355"
+      "noOfStops": "Nonstop",
+      "price": "₹ 4355"
     },
     {
       "flightNbr": "6E-274",
       "airlineName": "Indigo",
-      "airlineLogo": "https://www.logosurfer.com/wp-content/uploads/2018/03/indigo-logo_0.png",
+      "airlineLogo": "https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/44/26/c9/4426c926-0b3d-0b76-a99c-9d2bd4771b87/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
       "deptTime": "16:00",
       "deptCity": "Mumbai",
       "arivalTime": "18:00",
       "arivalCity": "New Delhi",
-      "noOfStops": "0",
-      "price": "6355"
+      "noOfStops": "Nonstop",
+      "price": "₹ 6355"
     },
     {
       "flightNbr": "6E-275",
       "airlineName": "Indigo",
-      "airlineLogo": "https://www.logosurfer.com/wp-content/uploads/2018/03/indigo-logo_0.png",
+      "airlineLogo": "https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/44/26/c9/4426c926-0b3d-0b76-a99c-9d2bd4771b87/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
       "deptTime": "15:00",
       "deptCity": "Mumbai",
       "arivalTime": "17:00",
       "arivalCity": "New Delhi",
-      "noOfStops": "0",
-      "price": "10355"
+      "noOfStops": "Nonstop",
+      "price": "₹ 10355"
     },
     {
       "flightNbr": "6E-275",
       "airlineName": "Indigo",
-      "airlineLogo": "https://www.logosurfer.com/wp-content/uploads/2018/03/indigo-logo_0.png",
+      "airlineLogo": "https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/44/26/c9/4426c926-0b3d-0b76-a99c-9d2bd4771b87/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
       "deptTime": "15:00",
       "deptCity": "Mumbai",
       "arivalTime": "17:00",
       "arivalCity": "Kolkata",
-      "noOfStops": "1",
-      "price": "2522"
+      "noOfStops": "1 stop",
+      "price": "₹ 2522"
     },
     {
       "flightNbr": "AI-275",
@@ -51,8 +51,8 @@
       "deptCity": "Mumbai",
       "arivalTime": "05:00",
       "arivalCity": "Jaipur",
-      "noOfStops": "0",
-      "price": "1500"
+      "noOfStops": "Nonstop",
+      "price": "₹ 1500"
     },
     {
       "flightNbr": "AI-275",
@@ -62,8 +62,8 @@
       "deptCity": "Mumbai",
       "arivalTime": "06:00",
       "arivalCity": "Bengaluru",
-      "noOfStops": "0",
-      "price": "3600"
+      "noOfStops": "Nonstop",
+      "price": "₹ 3600"
     },
     {
       "flightNbr": "AI-275",
@@ -73,19 +73,19 @@
       "deptCity": "Mumbai",
       "arivalTime": "05:00",
       "arivalCity": "Kolkata",
-      "noOfStops": "0",
-      "price": "1500"
+      "noOfStops": "Nonstop",
+      "price": "₹ 1500"
     },
     {
       "flightNbr": "AI-275",
       "airlineName": "Air India",
       "airlineLogo": "https://assets.stickpng.com/images/587b511a44060909aa603a81.png",
-      "deptTime": "04:00",
+      "deptTime": "05:00",
       "deptCity": "Mumbai",
-      "arivalTime": "06:00",
+      "arivalTime": "07:00",
       "arivalCity": "Bengaluru",
-      "noOfStops": "0",
-      "price": "3600"
+      "noOfStops": "Nonstop",
+      "price": "₹ 3600"
     },
     {
       "flightNbr": "AI-266",
@@ -95,19 +95,261 @@
       "deptCity": "Kolkata",
       "arivalTime": "06:00",
       "arivalCity": "Bengaluru",
-      "noOfStops": "0",
-      "price": "5988"
+      "noOfStops": "Nonstop",
+      "price": "₹ 5988"
     },
     {
       "flightNbr": "6E-279",
       "airlineName": "Indigo",
-      "airlineLogo": "https://seeklogo.com/images/I/indigo-logo-EDBB4B3C09-seeklogo.com.png",
+      "airlineLogo": "https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/44/26/c9/4426c926-0b3d-0b76-a99c-9d2bd4771b87/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
       "deptTime": "16:00",
       "deptCity": "Kolkata",
       "arivalTime": "22:00",
       "arivalCity": "Mumbai",
-      "noOfStops": "2",
-      "price": "4355"
+      "noOfStops": "2 stops",
+      "price": "₹ 4355"
+    },
+    {
+      "flightNbr": "SJ-256",
+      "airlineName": "SpiceJet",
+      "airlineLogo": "https://s3-symbol-logo.tradingview.com/spicejet--600.png",
+      "deptTime": "14:00",
+      "deptCity": "New Delhi",
+      "arivalTime": "16:00",
+      "arivalCity": "Ahemdabad",
+      "noOfStops": "Nonstop",
+      "price": "₹ 4988"
+    },
+    {
+      "flightNbr": "V-175",
+      "airlineName": "Vistara",
+      "airlineLogo": "https://pbs.twimg.com/media/B3B6A-7CUAAjarl.jpg",
+      "deptTime": "14:00",
+      "deptCity": "Bengaluru",
+      "arivalTime": "16:00",
+      "arivalCity": "Chennai",
+      "noOfStops": "Nonstop",
+      "price": "₹ 3785"
+    },
+    {
+      "flightNbr": "SJ-256",
+      "airlineName": "SpiceJet",
+      "airlineLogo": "https://s3-symbol-logo.tradingview.com/spicejet--600.png",
+      "deptTime": "13:00",
+      "deptCity": "New Delhi",
+      "arivalTime": "15:00",
+      "arivalCity": "Pune",
+      "noOfStops": "1 stop",
+      "price": "₹ 5985"
+    },
+    {
+      "flightNbr": "V-180",
+      "airlineName": "Vistara",
+      "airlineLogo": "https://pbs.twimg.com/media/B3B6A-7CUAAjarl.jpg",
+      "deptTime": "13:00",
+      "deptCity": "Bengaluru",
+      "arivalTime": "15:00",
+      "arivalCity": "Pune",
+      "noOfStops": "Nonstop",
+      "price": "₹ 3895"
+    },
+    {
+      "flightNbr": "V-187",
+      "airlineName": "Vistara",
+      "airlineLogo": "https://pbs.twimg.com/media/B3B6A-7CUAAjarl.jpg",
+      "deptTime": "13:30",
+      "deptCity": "Bengaluru",
+      "arivalTime": "15:00",
+      "arivalCity": "New Delhi",
+      "noOfStops": "1 stop",
+      "price": "₹ 4585"
+    },
+    {
+      "flightNbr": "V-180",
+      "airlineName": "Vistara",
+      "airlineLogo": "https://pbs.twimg.com/media/B3B6A-7CUAAjarl.jpg",
+      "deptTime": "16:00",
+      "deptCity": "Pune",
+      "arivalTime": "18:30",
+      "arivalCity": "Bengaluru",
+      "noOfStops": "Nonstop",
+      "price": "₹ 3895"
+    },
+    {
+      "flightNbr": "AI-295",
+      "airlineName": "Air India",
+      "airlineLogo": "https://assets.stickpng.com/images/587b511a44060909aa603a81.png",
+      "deptTime": "05:00",
+      "deptCity": "Pune",
+      "arivalTime": "07:00",
+      "arivalCity": "Bengaluru",
+      "noOfStops": "Nonstop",
+      "price": "₹ 3800"
+    },
+    {
+      "flightNbr": "AI-315",
+      "airlineName": "Air India",
+      "airlineLogo": "https://assets.stickpng.com/images/587b511a44060909aa603a81.png",
+      "deptTime": "10:00",
+      "deptCity": "Pune",
+      "arivalTime": "12:00",
+      "arivalCity": "New Delhi",
+      "noOfStops": "Nonstop",
+      "price": "₹ 4890"
+    },
+    {
+      "flightNbr": "AI-298",
+      "airlineName": "Air India",
+      "airlineLogo": "https://assets.stickpng.com/images/587b511a44060909aa603a81.png",
+      "deptTime": "10:00",
+      "deptCity": "Pune",
+      "arivalTime": "12:00",
+      "arivalCity": "Chennai",
+      "noOfStops": "1 stop",
+      "price": "₹ 4850"
+    },
+    {
+      "flightNbr": "SJ-268",
+      "airlineName": "SpiceJet",
+      "airlineLogo": "https://s3-symbol-logo.tradingview.com/spicejet--600.png",
+      "deptTime": "14:00",
+      "deptCity": "Chennai",
+      "arivalTime": "16:00",
+      "arivalCity": "Pune",
+      "noOfStops": "1 stop",
+      "price": "₹ 4980"
+    },
+    {
+      "flightNbr": "6E-305",
+      "airlineName": "Indigo",
+      "airlineLogo": "https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/44/26/c9/4426c926-0b3d-0b76-a99c-9d2bd4771b87/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
+      "deptTime": "20:00",
+      "deptCity": "Chennai",
+      "arivalTime": "22:00",
+      "arivalCity": "New Delhi",
+      "noOfStops": "2 stops",
+      "price": "₹ 5430"
+    },
+    {
+      "flightNbr": "6E-309",
+      "airlineName": "Indigo",
+      "airlineLogo": "https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/44/26/c9/4426c926-0b3d-0b76-a99c-9d2bd4771b87/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
+      "deptTime": "19:00",
+      "deptCity": "Jaipur",
+      "arivalTime": "20:00",
+      "arivalCity": "New Delhi",
+      "noOfStops": "Nonstop",
+      "price": "₹ 3480"
+    },
+    {
+      "flightNbr": "V-182",
+      "airlineName": "Vistara",
+      "airlineLogo": "https://pbs.twimg.com/media/B3B6A-7CUAAjarl.jpg",
+      "deptTime": "08:00",
+      "deptCity": "Jaipur",
+      "arivalTime": "10:00",
+      "arivalCity": "Mumbai",
+      "noOfStops": "Nonstop",
+      "price": "₹ 3845"
+    },
+    {
+      "flightNbr": "SJ-263",
+      "airlineName": "SpiceJet",
+      "airlineLogo": "https://s3-symbol-logo.tradingview.com/spicejet--600.png",
+      "deptTime": "08:30",
+      "deptCity": "Jaipur",
+      "arivalTime": "10:30",
+      "arivalCity": "Pune",
+      "noOfStops": "1 stop",
+      "price": "₹ 4230"
+    },
+    {
+      "flightNbr": "V-184",
+      "airlineName": "Vistara",
+      "airlineLogo": "https://pbs.twimg.com/media/B3B6A-7CUAAjarl.jpg",
+      "deptTime": "09:00",
+      "deptCity": "Ahemdabad",
+      "arivalTime": "11:00",
+      "arivalCity": "New Delhi",
+      "noOfStops": "Nonstop",
+      "price": "₹ 3855"
+    },
+    {
+      "flightNbr": "AI-278",
+      "airlineName": "Air India",
+      "airlineLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7aixuKe1CmrdfCuFc0pJPXnIWgh2SNSkDW0L9_Zek5g&s",
+      "deptTime": "09:00",
+      "deptCity": "Ahemdabad",
+      "arivalTime": "11:00",
+      "arivalCity": "New Delhi",
+      "noOfStops": "Nonstop",
+      "price": "₹ 3450"
+    },
+    {
+      "flightNbr": "6E-311",
+      "airlineName": "Indigo",
+      "airlineLogo": "https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/44/26/c9/4426c926-0b3d-0b76-a99c-9d2bd4771b87/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png",
+      "deptTime": "09:00",
+      "deptCity": "Ahemdabad",
+      "arivalTime": "11:00",
+      "arivalCity": "New Delhi",
+      "noOfStops": "Nonstop",
+      "price": "₹ 3580"
+    },
+    {
+      "flightNbr": "SJ-265",
+      "airlineName": "SpiceJet",
+      "airlineLogo": "https://s3-symbol-logo.tradingview.com/spicejet--600.png",
+      "deptTime": "08:30",
+      "deptCity": "Ahemdabad",
+      "arivalTime": "10:30",
+      "arivalCity": "New Delhi",
+      "noOfStops": "1 stop",
+      "price": "₹ 3630"
+    },
+    {
+      "flightNbr": "SJ-269",
+      "airlineName": "SpiceJet",
+      "airlineLogo": "https://s3-symbol-logo.tradingview.com/spicejet--600.png",
+      "deptTime": "09:30",
+      "deptCity": "Ahemdabad",
+      "arivalTime": "11:30",
+      "arivalCity": "Pune",
+      "noOfStops": "Nonstop",
+      "price": "₹ 4320"
+    },
+    {
+      "flightNbr": "SJ-279",
+      "airlineName": "SpiceJet",
+      "airlineLogo": "https://s3-symbol-logo.tradingview.com/spicejet--600.png",
+      "deptTime": "10:30",
+      "deptCity": "Mumbai",
+      "arivalTime": "12:30",
+      "arivalCity": "New Delhi",
+      "noOfStops": "1 stop",
+      "price": "₹ 4320"
+    },
+    {
+      "flightNbr": "AI-288",
+      "airlineName": "Air India",
+      "airlineLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7aixuKe1CmrdfCuFc0pJPXnIWgh2SNSkDW0L9_Zek5g&s",
+      "deptTime": "13:00",
+      "deptCity": "New Delhi",
+      "arivalTime": "14:30",
+      "arivalCity": "Mumbai",
+      "noOfStops": "Nonstop",
+      "price": "₹ 4450"
+    },
+    {
+      "flightNbr": "V-186",
+      "airlineName": "Vistara",
+      "airlineLogo": "https://pbs.twimg.com/media/B3B6A-7CUAAjarl.jpg",
+      "deptTime": "15:00",
+      "deptCity": "New Delhi",
+      "arivalTime": "17:00",
+      "arivalCity": "Bengaluru",
+      "noOfStops": "1 stop",
+      "price": "₹ 3965"
     }
   ]
   
