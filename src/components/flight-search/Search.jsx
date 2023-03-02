@@ -12,8 +12,10 @@ const Search = () => {
     console.log(travelData);
   }, []);
   return (
-    <div>
-      <Navbar />
+    <div className="search">
+      <div className="top">
+        <Navbar />
+      </div>
       <FlightSearch travelData={travelData} />
     </div>
   );

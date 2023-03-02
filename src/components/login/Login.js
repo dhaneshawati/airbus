@@ -37,6 +37,9 @@ const Login = () => {
   useEffect(() => {
     if (currentUser) {
       dispatch(setUser(currentUser));
+      setTimeout(() => {
+        console.log("trial");
+      }, 100);
       navigate(redirectPath, { replace: true });
     }
   }, [currentUser]);
@@ -45,6 +48,7 @@ const Login = () => {
     setError("");
     try {
       await signInWithEmailAndPassword(auth, email, password);
+      dispatch(setUser(currentUser));
     } catch (err) {
       setError(err.message);
     }

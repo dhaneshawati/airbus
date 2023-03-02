@@ -18,6 +18,7 @@
 }
 .flightsearch{
     margin-left: 20px;
+    margin-top: 20px;
     /* width: 100%;
     height: 100%; */
 }
@@ -25,3 +26,9 @@
     font-family: 'Times New Roman', Times, serif;
     color: dodgerblue;
 }
+/* .format{
+    display: flex;
+    /* align-items: center; */
+    /* flex-direction: column;
+    justify-content: center; */
+/* } */

@@ -1,8 +1,40 @@
 .footer{
     /* background-image: url("https://media.istockphoto.com/id/1164049513/photo/airplane-taking-off-from-the-airport.jpg?s=612x612&w=0&k=20&c=nJm8C9OReeKktbMavXhP8O71cZ8AZx8RKiE-hK8TrWE=");
     background-repeat: no-repeat; */
-    width: 100vw;
+    width: 100%;
+    /* max-width: 1024px; */
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    background-color: #ECF2FF;
+
+    /* margin-top: 30px; */
+}
+.text{
+    /* margin: 50px; */
+    /* margin-top: 20px; */
+    width: 95%;
     height: 100vh;
     display: flex;
-    object-fit: contain;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+.pageContainer{
+    border: 1px solid red;
+}
+.pageContainer .pagination{
+    /* display: inline-block; */
+    border: 1px solid blue;
+    /* gap: 20px;
+    cursor: pointer; */
+}
+.page-item{
+    display: inline-block;
+    border: 1px solid orangered;
 }

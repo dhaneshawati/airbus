@@ -1,5 +1,6 @@
 import FlightJSON from "../../Assets/flights.json";
 import { filterBySourceDest } from "../../services/globalServices";
+import { setTravelInfo } from "./actionCreator";
 
 export const GET_FLIGHT_LIST = "GET_FLIGHT_LIST";
 export const GET_FLIGHT_LIST_SUCCESS = "GET_FLIGHT_LIST_SUCCESS";
@@ -28,6 +29,7 @@ export const fetchDataJson = (travelData) => {
   return (dispatch) => {
     dispatch(fetchFlights());
     const jsonResponse = [...FlightJSON];
+    dispatch(setTravelInfo(travelData));
     const response = filterBySourceDest(travelData, jsonResponse);
     dispatch(fetchFlightSuccess(response));
   };

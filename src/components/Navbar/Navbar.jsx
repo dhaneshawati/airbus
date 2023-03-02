@@ -41,7 +41,14 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navContainer">
-        <span className=" text-2xl logo">Airbus</span>
+        <span
+          className=" text-2xl logo"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Airbus
+        </span>
         <div className="navItems">
           {!user && (
             <>

@@ -42,7 +42,7 @@ function Header() {
       destination,
       deptDate: selectedDate,
       returnDate: null,
-      selectTrip: trip,
+      tripType: trip,
       people: person,
       classType,
     };

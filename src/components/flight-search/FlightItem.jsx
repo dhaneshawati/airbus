@@ -4,7 +4,18 @@ import { Avatar } from "@mui/material";
 
 const FlightItem = (props) => {
   const { flightData, bookNow } = props;
+  const bookingObj = {};
 
+  const handlebook = (e) => {
+    bookingObj.airLine = flightData?.airlineName;
+    bookingObj.departTime = flightData?.deptTime;
+    bookingObj.arriveTime = flightData?.arivalTime;
+    bookingObj.flightNumber = flightData?.flightNbr;
+    bookingObj.stops = flightData?.noOfStops;
+    bookingObj.price = flightData?.price;
+
+    bookNow(bookingObj);
+  };
   return (
     <div className="itemcontainer">
       {console.log(flightData)}
@@ -32,7 +43,9 @@ const FlightItem = (props) => {
         <span className="place">{flightData?.arivalCity}</span>
       </div>
       <div className="btn">
-        <button className="price">{flightData?.price}</button>
+        <button className="price" onClick={handlebook}>
+          {flightData?.price}
+        </button>
       </div>
     </div>
   );

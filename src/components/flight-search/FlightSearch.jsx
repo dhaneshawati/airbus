@@ -11,6 +11,12 @@ import Autocomplete from "@mui/material/Autocomplete";
 import RadioGroup from "@mui/material/RadioGroup";
 import Radio from "@mui/material/Radio";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import Box from "@mui/material/Box";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
+
 import { validateSearch } from "../../services/globalServices";
 import {
   fetchDataJson,
@@ -40,6 +46,8 @@ const FlightSearch = (props) => {
   const jDate = travelData.journeyDate;
   const rDate = travelData.returnDate;
   const trip = travelData.tripType;
+  const person = travelData.persons;
+  const classT = travelData.class;
 
   const [source, setSource] = useState(start);
   const [dest, setDest] = useState(end);
@@ -50,6 +58,8 @@ const FlightSearch = (props) => {
   const [inputSource, setInputSource] = useState(start);
   const [inputDest, setInputDest] = useState(end);
   const [cityError, setCityError] = useState(false);
+  const [classType, setClassType] = useState(classT);
+  const [travellers, setTravellers] = useState(person);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -73,6 +83,9 @@ const FlightSearch = (props) => {
   const handleDestination = (newVal) => {
     setDest(newVal);
   };
+  const handleTravellers = (newVal) => {
+    setTravellers(newVal);
+  };
 
   const handleDeparture = (e) => {
     setDeptDate(e.target.value);
@@ -86,6 +99,10 @@ const FlightSearch = (props) => {
     setReturnDate(e.target.value);
   };
 
+  const handleClass = (event) => {
+    setClassType(event.target.value);
+  };
+
   const handleSearchFlight = () => {
     const payload = {};
 
@@ -93,7 +110,10 @@ const FlightSearch = (props) => {
     payload.destination = dest?.name ? dest.name : end;
     payload.deptDate = deptDate ? deptDate : jDate;
     payload.returnDate = returnDate;
-    payload.tripType = selectTrip;
+    payload.tripType = selectTrip ? selectTrip : trip;
+    payload.people = travellers ? travellers : person;
+    payload.classType = classType ? classType : classT;
+
     console.log("payload", payload);
     console.log("source", source);
     if (
@@ -197,6 +217,30 @@ const FlightSearch = (props) => {
           />
         </Grid>
         <Grid item xs={12} md={6}>
+          {/* <div className="format">
+            <span className="label">no of Travellers:</span> */}
+          <TextField
+            type="number"
+            InputProps={{
+              inputProps: {
+                max: 100,
+                min: 1,
+              },
+            }}
+            label="People"
+            value={travellers}
+            onChange={(event, newValue) => {
+              handleTravellers(newValue);
+            }}
+            // placeholder={person}
+            style={{ width: 300 }}
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
+          {/* </div> */}
+        </Grid>
+        <Grid item xs={12} md={6}>
           <TextField
             label="Journey Date"
             type="date"
@@ -209,6 +253,24 @@ const FlightSearch = (props) => {
               shrink: true,
             }}
           />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Box sx={{ minWidth: 120 }}>
+            <FormControl style={{ width: 300 }}>
+              <InputLabel id="demo-simple-select-label">Class</InputLabel>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={classType}
+                label="Class"
+                onChange={handleClass}
+              >
+                <MenuItem value={"Economy"}>Economy</MenuItem>
+                <MenuItem value={"Business"}>Business</MenuItem>
+                <MenuItem value={"First Class"}>First Class</MenuItem>
+              </Select>
+            </FormControl>
+          </Box>
         </Grid>
         {selectTrip?.toUpperCase() === "BOTH" && (
           <Grid item xs={12} md={6}>
@@ -225,6 +287,7 @@ const FlightSearch = (props) => {
             />
           </Grid>
         )}
+
         <Grid item xs={12}>
           <Button
             variant="contained"

@@ -5,7 +5,7 @@ const defaultState = {
   endPoint: "",
   journeyDate: null,
   returnDate: null,
-  tripType: "oneWay",
+  tripType: "one",
   persons: 1,
   class: "Economy",
 };
@@ -19,7 +19,7 @@ const travelReducer = (state = defaultState, action) => {
         endPoint: action.payload.destination,
         journeyDate: action.payload.deptDate,
         returnDate: action.payload.returnDate,
-        tripType: action.payload.selectTrip,
+        tripType: action.payload.tripType,
         persons: action.payload.people,
         class: action.payload.classType,
       };
