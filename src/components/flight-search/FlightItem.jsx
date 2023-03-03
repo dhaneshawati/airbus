@@ -46,7 +46,7 @@ const FlightItem = (props) => {
       </div>
       <div className="btn">
         <button className="price" disabled={!user} onClick={handlebook}>
-          {flightData?.price}
+          {`₹ ${flightData?.price}`}
         </button>
       </div>
     </div>

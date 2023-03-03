@@ -2,16 +2,21 @@
    margin-left: 17rem;
    display: flex;
    flex-direction: column;
-   gap: 25px;
+   gap: 15px;
 }
-.container{
+.fillDetails{
+   margin-top: 2rem;
    position: relative;
-   top: 2rem;
+   left: 320px;
 }
+/* .container{
+   position: relative;
+   top: -1rem;
+} */
 .checkout_btn{
-   margin-top: 50px;
+   margin-top: 20px;
    position: relative;
-   left: 25px;
+   left: 30px;
 }
 .checkout_btn button:disabled{
    background-color: #aaaaaa;

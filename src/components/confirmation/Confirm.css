@@ -1,0 +1,110 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+} */
+.confirm{
+    width: 100%;
+    height: 100vh;
+    /* height: max-content; */
+    background-color: aliceblue;
+}
+.summary_container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: auto;
+    align-items: center;
+    
+}
+.headtitle{
+   /* display: flex; */
+   height: max-content;
+   width: max-content;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+}
+.headerText{
+    font-size: xx-large;
+    font-weight: bolder; 
+}
+.connfirmDetails{
+    font-size: large;
+}
+.details_Container{
+   display: flex;
+   /* flex-direction: column; */
+   gap: 5rem;
+   padding: 10px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 5px #aaaaaa; */
+}
+.firstcol{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 1.5rem;
+}
+.secondcol{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.overContain{
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #aaaaaa;
+}
+.total{
+    /* width: 480px; */
+    /* height: auto; */
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 5px #aaaaaa; */
+   
+}
+hr{
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+    width: 480px;
+}
+.fare{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin: 1rem auto;
+}
+.fare .totalFare{
+    font-size: large;
+    font-weight: bold;
+}
+.fare .amount{
+    font-weight: 600;
+}
+.pay_btn{
+    margin: 1rem auto;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: black;
+}
+.pay_btn .pay{
+    color: white;
+}
+.pay_btn:hover{
+    background-color: rgb(36, 34, 34)
+}
+.highText{
+    font-weight: 600;
+}

@@ -8,7 +8,7 @@
       "arivalTime": "22:00",
       "arivalCity": "New Delhi",
       "noOfStops": "Nonstop",
-      "price": "₹ 4355"
+      "price": "4355"
     },
     {
       "flightNbr": "6E-274",
@@ -19,7 +19,7 @@
       "arivalTime": "18:00",
       "arivalCity": "New Delhi",
       "noOfStops": "Nonstop",
-      "price": "₹ 6355"
+      "price": "6355"
     },
     {
       "flightNbr": "6E-275",
@@ -30,7 +30,7 @@
       "arivalTime": "17:00",
       "arivalCity": "New Delhi",
       "noOfStops": "Nonstop",
-      "price": "₹ 10355"
+      "price": "10355"
     },
     {
       "flightNbr": "6E-275",
@@ -41,7 +41,7 @@
       "arivalTime": "17:00",
       "arivalCity": "Kolkata",
       "noOfStops": "1 stop",
-      "price": "₹ 2522"
+      "price": "2522"
     },
     {
       "flightNbr": "AI-255",
@@ -52,7 +52,7 @@
       "arivalTime": "05:00",
       "arivalCity": "Jaipur",
       "noOfStops": "Nonstop",
-      "price": "₹ 1500"
+      "price": "1500"
     },
     {
       "flightNbr": "AI-275",
@@ -63,7 +63,7 @@
       "arivalTime": "06:00",
       "arivalCity": "Bengaluru",
       "noOfStops": "Nonstop",
-      "price": "₹ 3600"
+      "price": "3600"
     },
     {
       "flightNbr": "AI-265",
@@ -74,7 +74,7 @@
       "arivalTime": "05:00",
       "arivalCity": "Kolkata",
       "noOfStops": "Nonstop",
-      "price": "₹ 1500"
+      "price": "1500"
     },
     {
       "flightNbr": "AI-275",
@@ -85,7 +85,7 @@
       "arivalTime": "07:00",
       "arivalCity": "Bengaluru",
       "noOfStops": "Nonstop",
-      "price": "₹ 3600"
+      "price": "3600"
     },
     {
       "flightNbr": "AI-266",
@@ -96,7 +96,7 @@
       "arivalTime": "06:00",
       "arivalCity": "Bengaluru",
       "noOfStops": "Nonstop",
-      "price": "₹ 5988"
+      "price": "5988"
     },
     {
       "flightNbr": "6E-279",
@@ -107,7 +107,7 @@
       "arivalTime": "22:00",
       "arivalCity": "Mumbai",
       "noOfStops": "2 stops",
-      "price": "₹ 4355"
+      "price": "4355"
     },
     {
       "flightNbr": "SJ-256",
@@ -118,7 +118,7 @@
       "arivalTime": "16:00",
       "arivalCity": "Ahemdabad",
       "noOfStops": "Nonstop",
-      "price": "₹ 4988"
+      "price": "4988"
     },
     {
       "flightNbr": "V-175",
@@ -129,7 +129,7 @@
       "arivalTime": "16:00",
       "arivalCity": "Chennai",
       "noOfStops": "Nonstop",
-      "price": "₹ 3785"
+      "price": "3785"
     },
     {
       "flightNbr": "SJ-256",
@@ -140,7 +140,7 @@
       "arivalTime": "15:00",
       "arivalCity": "Pune",
       "noOfStops": "1 stop",
-      "price": "₹ 5985"
+      "price": "5985"
     },
     {
       "flightNbr": "V-180",
@@ -151,7 +151,7 @@
       "arivalTime": "15:00",
       "arivalCity": "Pune",
       "noOfStops": "Nonstop",
-      "price": "₹ 3895"
+      "price": "3895"
     },
     {
       "flightNbr": "V-187",
@@ -162,7 +162,7 @@
       "arivalTime": "15:00",
       "arivalCity": "New Delhi",
       "noOfStops": "1 stop",
-      "price": "₹ 4585"
+      "price": "4585"
     },
     {
       "flightNbr": "V-180",
@@ -173,7 +173,7 @@
       "arivalTime": "18:30",
       "arivalCity": "Bengaluru",
       "noOfStops": "Nonstop",
-      "price": "₹ 3895"
+      "price": "3895"
     },
     {
       "flightNbr": "AI-295",
@@ -184,7 +184,7 @@
       "arivalTime": "07:00",
       "arivalCity": "Bengaluru",
       "noOfStops": "Nonstop",
-      "price": "₹ 3800"
+      "price": "3800"
     },
     {
       "flightNbr": "AI-315",
@@ -195,7 +195,7 @@
       "arivalTime": "12:00",
       "arivalCity": "New Delhi",
       "noOfStops": "Nonstop",
-      "price": "₹ 4890"
+      "price": "4890"
     },
     {
       "flightNbr": "AI-298",
@@ -206,7 +206,7 @@
       "arivalTime": "12:00",
       "arivalCity": "Chennai",
       "noOfStops": "1 stop",
-      "price": "₹ 4850"
+      "price": "4850"
     },
     {
       "flightNbr": "SJ-268",
@@ -217,7 +217,7 @@
       "arivalTime": "16:00",
       "arivalCity": "Pune",
       "noOfStops": "1 stop",
-      "price": "₹ 4980"
+      "price": "4980"
     },
     {
       "flightNbr": "6E-305",
@@ -228,7 +228,7 @@
       "arivalTime": "22:00",
       "arivalCity": "New Delhi",
       "noOfStops": "2 stops",
-      "price": "₹ 5430"
+      "price": "5430"
     },
     {
       "flightNbr": "6E-309",
@@ -239,7 +239,7 @@
       "arivalTime": "20:00",
       "arivalCity": "New Delhi",
       "noOfStops": "Nonstop",
-      "price": "₹ 3480"
+      "price": "3480"
     },
     {
       "flightNbr": "V-182",
@@ -250,7 +250,7 @@
       "arivalTime": "10:00",
       "arivalCity": "Mumbai",
       "noOfStops": "Nonstop",
-      "price": "₹ 3845"
+      "price": "3845"
     },
     {
       "flightNbr": "SJ-263",
@@ -261,7 +261,7 @@
       "arivalTime": "10:30",
       "arivalCity": "Pune",
       "noOfStops": "1 stop",
-      "price": "₹ 4230"
+      "price": "4230"
     },
     {
       "flightNbr": "V-184",
@@ -272,7 +272,7 @@
       "arivalTime": "11:00",
       "arivalCity": "New Delhi",
       "noOfStops": "Nonstop",
-      "price": "₹ 3855"
+      "price": "3855"
     },
     {
       "flightNbr": "AI-278",
@@ -283,7 +283,7 @@
       "arivalTime": "11:00",
       "arivalCity": "New Delhi",
       "noOfStops": "Nonstop",
-      "price": "₹ 3450"
+      "price": "3450"
     },
     {
       "flightNbr": "6E-311",
@@ -294,7 +294,7 @@
       "arivalTime": "11:00",
       "arivalCity": "New Delhi",
       "noOfStops": "Nonstop",
-      "price": "₹ 3580"
+      "price": "3580"
     },
     {
       "flightNbr": "SJ-265",
@@ -305,7 +305,7 @@
       "arivalTime": "10:30",
       "arivalCity": "New Delhi",
       "noOfStops": "1 stop",
-      "price": "₹ 3630"
+      "price": "3630"
     },
     {
       "flightNbr": "SJ-269",
@@ -316,7 +316,7 @@
       "arivalTime": "11:30",
       "arivalCity": "Pune",
       "noOfStops": "Nonstop",
-      "price": "₹ 4320"
+      "price": "4320"
     },
     {
       "flightNbr": "SJ-279",
@@ -327,7 +327,7 @@
       "arivalTime": "12:30",
       "arivalCity": "New Delhi",
       "noOfStops": "1 stop",
-      "price": "₹ 4320"
+      "price": "4320"
     },
     {
       "flightNbr": "AI-288",
@@ -338,7 +338,7 @@
       "arivalTime": "14:30",
       "arivalCity": "Mumbai",
       "noOfStops": "Nonstop",
-      "price": "₹ 4450"
+      "price": "4450"
     },
     {
       "flightNbr": "V-186",
@@ -349,7 +349,7 @@
       "arivalTime": "17:00",
       "arivalCity": "Bengaluru",
       "noOfStops": "1 stop",
-      "price": "₹ 3965"
+      "price": "3965"
     }
   ]
   

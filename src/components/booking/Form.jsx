@@ -88,10 +88,13 @@ export default function Form() {
   }
   return (
     <div className="forms">
+      <span className=" text-lg font-bold font-serif fillDetails">
+        Please fill your details
+      </span>
       <Box
         component="form"
         sx={{
-          "& .MuiTextField-root": { m: 1, width: "300px", gap: "20px" },
+          "& .MuiTextField-root": { m: 1, width: "300px", gap: "10px" },
         }}
         noValidate
         autoComplete="off"

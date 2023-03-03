@@ -1,16 +1,96 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import "./Confirm.css";
+import { useNavigate } from "react-router-dom";
 
 const Confirm = () => {
-  const detail = useSelector((state) => state.userInfo.personalDetails);
+  const Pdetails = useSelector((state) => state.userInfo.personalDetails);
+  const bookData = useSelector((state) => state.bookingInfo.result);
+  const travelData = useSelector((state) => state.travelInfo);
+  const totalPrice = Number(bookData.price) * Number(travelData.persons);
+  const navigate = useNavigate();
+
+  const handlePayment = (e) => {
+    alert("Payment Successful!");
+    navigate("/");
+  };
   return (
     <div className="confirm">
-      Order is Confirmed!!
-      <div className="info">
-        <h4>{detail.name}</h4>
-        <h5>{detail.phoneNumber}</h5>
-        <h5>{detail.emailId}</h5>
-        <h5>{detail.address}</h5>
+      <div className="summary_container">
+        <div className="headtitle">
+          <span className="headerText">Booking Summary</span>
+          <p className="connfirmDetails">Confirm booking details</p>
+        </div>
+        <div className="overContain">
+          <div className="details_Container">
+            <div className="firstcol">
+              <p>
+                <span className="highText">Name: </span>
+                <span>{Pdetails.name}</span>
+              </p>
+              <p>
+                <span className="highText">Email id: </span>
+                <span>{Pdetails.emailId}</span>
+              </p>
+              <p>
+                <span className="highText">Flight number: </span>
+                <span>{bookData.flightNumber}</span>
+              </p>
+              <p>
+                <span className="highText">Source city: </span>
+                <span>{travelData.startPoint}</span>
+              </p>
+              <p>
+                <span className="highText">Departure time: </span>
+                <span>{bookData.departTime}</span>
+              </p>
+              <p>
+                <span className="highText">Journey Date: </span>
+                <span>{travelData.journeyDate}</span>
+              </p>
+            </div>
+            <div className="secondcol">
+              <p>
+                <span className="highText">Phone number: </span>
+                <span>{Pdetails.phoneNumber}</span>
+              </p>
+              <p>
+                <span className="highText">Airline: </span>
+                <span>{bookData.airLine}</span>
+              </p>
+              <p>
+                <span className="highText">Class Type: </span>
+                <span>{travelData.class}</span>
+              </p>
+              <p>
+                <span className="highText">Destination city: </span>
+                <span>{travelData.endPoint}</span>
+              </p>
+              <p>
+                <span className="highText">Arrival time: </span>
+                <span>{bookData.arriveTime}</span>
+              </p>
+              <p>
+                <span className="highText">Total travellers: </span>
+                <span>{travelData.persons}</span>
+              </p>
+            </div>
+          </div>
+
+          <div className="total">
+            <hr />
+            <div className="fare">
+              <p className="totalFare">Total Fare:</p>
+              <p className="amount">{`₹ ${totalPrice}`}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="pay_btn">
+          <button className="pay" onClick={handlePayment}>
+            Confirm and Pay
+          </button>
+        </div>
       </div>
     </div>
   );

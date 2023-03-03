@@ -83,9 +83,9 @@ const FlightSearch = (props) => {
   const handleDestination = (newVal) => {
     setDest(newVal);
   };
-  const handleTravellers = (newVal) => {
-    setTravellers(newVal);
-  };
+  // const handleTravellers = (newVal) => {
+  //   setTravellers(newVal);
+  // };
 
   const handleDeparture = (e) => {
     setDeptDate(e.target.value);
@@ -227,11 +227,9 @@ const FlightSearch = (props) => {
                 min: 1,
               },
             }}
-            label="People"
+            label="Passengers"
             value={travellers}
-            onChange={(event, newValue) => {
-              handleTravellers(newValue);
-            }}
+            onChange={(event) => setTravellers(event.target.value)}
             // placeholder={person}
             style={{ width: 300 }}
             InputLabelProps={{
