@@ -34,3 +34,6 @@
     color: white;
     width: 80px;
 }
+.btn .price:disabled{
+    background-color: #aaaaaa;
+}

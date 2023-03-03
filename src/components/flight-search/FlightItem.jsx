@@ -1,10 +1,12 @@
 import React from "react";
 import "./FlightItem.css";
 import { Avatar } from "@mui/material";
+import { useSelector } from "react-redux";
 
 const FlightItem = (props) => {
   const { flightData, bookNow } = props;
   const bookingObj = {};
+  const user = useSelector((state) => state.userInfo.user);
 
   const handlebook = (e) => {
     bookingObj.airLine = flightData?.airlineName;
@@ -43,7 +45,7 @@ const FlightItem = (props) => {
         <span className="place">{flightData?.arivalCity}</span>
       </div>
       <div className="btn">
-        <button className="price" onClick={handlebook}>
+        <button className="price" disabled={!user} onClick={handlebook}>
           {flightData?.price}
         </button>
       </div>

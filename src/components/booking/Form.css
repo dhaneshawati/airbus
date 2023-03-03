@@ -1,0 +1,18 @@
+.forms{
+   margin-left: 17rem;
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+}
+.container{
+   position: relative;
+   top: 2rem;
+}
+.checkout_btn{
+   margin-top: 50px;
+   position: relative;
+   left: 25px;
+}
+.checkout_btn button:disabled{
+   background-color: #aaaaaa;
+}

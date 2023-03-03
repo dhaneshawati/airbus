@@ -1,6 +1,6 @@
 export const NEWLOGIN = "Login";
 export const LOGOUT = "Logout";
-// export const TRAVELLER = "Traveller";
+export const TRAVELLER_INFO = "TRAVELLER_INFO";
 export const SET_BOOKING_DETAILS = "SET_BOOKING_DETAILS";
 export const TRAVEL_DATA_USER = "TRAVEL_DATA_USER";
 
@@ -30,4 +30,10 @@ function bookDetails(val) {
   };
 }
 
-export { setUser, onSignOut, setTravelInfo, bookDetails };
+function setPersonalDetails(val) {
+  return {
+    type: TRAVELLER_INFO,
+    payload: val,
+  };
+}
+export { setUser, onSignOut, setTravelInfo, bookDetails, setPersonalDetails };

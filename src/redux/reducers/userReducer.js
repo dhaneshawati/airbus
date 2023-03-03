@@ -1,7 +1,8 @@
-import { NEWLOGIN, LOGOUT } from "../actions/actionCreator";
+import { NEWLOGIN, LOGOUT, TRAVELLER_INFO } from "../actions/actionCreator";
 
 const initialState = {
   user: null,
+  personalDetails: null,
 };
 
 const userReducer = (state = initialState, action) => {
@@ -16,6 +17,12 @@ const userReducer = (state = initialState, action) => {
       return {
         ...state,
         user: null,
+      };
+
+    case TRAVELLER_INFO:
+      return {
+        ...state,
+        personalDetails: action.payload,
       };
 
     default:
