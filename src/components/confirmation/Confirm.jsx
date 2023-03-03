@@ -1,21 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import "./Confirm.css";
 import { useNavigate } from "react-router-dom";
+import Flash from "../Flash";
 
 const Confirm = () => {
   const Pdetails = useSelector((state) => state.userInfo.personalDetails);
   const bookData = useSelector((state) => state.bookingInfo.result);
   const travelData = useSelector((state) => state.travelInfo);
-  const totalPrice = Number(bookData.price) * Number(travelData.persons);
+  const [flash, setFlash] = useState("Successful");
+  const [flashFlag, setFlashFlag] = useState(false);
+  const flightPrice = bookData ? bookData.price : "";
+  const travellers = travelData ? travelData.persons : 1;
+  const totalPrice = Number(flightPrice) * Number(travellers);
   const navigate = useNavigate();
 
+  const showFlash = (message) => {
+    setFlash(message);
+  };
+
   const handlePayment = (e) => {
-    alert("Payment Successful!");
-    navigate("/");
+    setFlashFlag(true);
+    showFlash(
+      "Your payment is Successful! You are being redirected to home page..."
+    );
+    setTimeout(() => {
+      navigate("/");
+    }, 3000);
   };
   return (
     <div className="confirm">
+      {flashFlag && <Flash flashMsg={flash} />}
       <div className="summary_container">
         <div className="headtitle">
           <span className="headerText">Booking Summary</span>
