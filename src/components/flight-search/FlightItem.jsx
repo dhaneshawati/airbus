@@ -34,7 +34,7 @@ const FlightItem = (props) => {
           {flightData?.deptCity ? flightData.deptCity : ""}
         </span>
       </div>
-      {flightData.deptTime}
+      <div className="dept">{flightData.deptTime}</div>
       <div className="flight">
         <span className="name">{flightData?.airlineName}</span>
         <span className="number">{flightData?.flightNbr}</span>
