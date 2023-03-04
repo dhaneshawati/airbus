@@ -14,6 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import DatePicker from "react-datepicker";
+import CityJSON from "../../Assets/cities.json";
 import "react-datepicker/dist/react-datepicker.css";
 import { setTravelInfo } from "../../redux/actions/actionCreator";
 
@@ -25,9 +26,10 @@ function Header() {
   const [destination, setDestination] = useState("");
   const [trip, setTrip] = useState("one");
   const [classType, setClassType] = useState("Economy");
-
+  const cities = [...CityJSON];
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
   function handlePerson(operation) {
     if (operation === "i") {
       setPerson((prev) => prev + 1);
@@ -36,6 +38,15 @@ function Header() {
       setPerson((prev) => prev - 1);
     }
   }
+
+  function handleSourceAutoSuggest(searchTerm) {
+    setSource(searchTerm);
+  }
+
+  function handleDestinationAutoSuggest(val) {
+    setDestination(val);
+  }
+
   function handleSearch() {
     const info = {
       source,
@@ -88,26 +99,76 @@ function Header() {
           time!
         </p>
         <div className="headerSearch">
-          <div className="headerSearchItem">
-            <FontAwesomeIcon icon={faPlaneDeparture} className="headerIcon" />
-            <input
-              type="text"
-              placeholder="Enter source place"
-              className="headerSearchInput"
-              onChange={(e) => setSource(e.target.value)}
-              value={source}
-            />
+          <div className="dropdown_container">
+            <div className="headerSearchItem searchField">
+              <FontAwesomeIcon icon={faPlaneDeparture} className="headerIcon" />
+              <input
+                type="text"
+                placeholder="Enter source place"
+                className="headerSearchInput"
+                onChange={(e) => setSource(e.target.value)}
+                value={source}
+              />
+            </div>
+            <div className="dropdown">
+              {cities
+                .filter((item) => {
+                  const searchTerm = source.toLowerCase();
+                  const cityName = item.name.toLowerCase();
+
+                  return (
+                    searchTerm &&
+                    cityName.includes(searchTerm) &&
+                    cityName !== searchTerm
+                  );
+                })
+                .map((item) => (
+                  <div
+                    onClick={() => handleSourceAutoSuggest(item.name)}
+                    className="dropdown-row"
+                    key={item.id}
+                  >
+                    {item.name}
+                  </div>
+                ))}
+            </div>
           </div>
-          <div className="headerSearchItem">
-            <FontAwesomeIcon icon={faPlaneArrival} className="headerIcon" />
-            <input
-              type="text"
-              placeholder="Enter destination place"
-              className="headerSearchInput"
-              onChange={(e) => setDestination(e.target.value)}
-              value={destination}
-            />
+
+          <div className="dropdown_container">
+            <div className="headerSearchItem searchField">
+              <FontAwesomeIcon icon={faPlaneArrival} className="headerIcon" />
+              <input
+                type="text"
+                placeholder="Enter destination place"
+                className="headerSearchInput"
+                onChange={(e) => setDestination(e.target.value)}
+                value={destination}
+              />
+            </div>
+            <div className="dropdown">
+              {cities
+                .filter((item) => {
+                  const searchTerm = destination.toLowerCase();
+                  const cityName = item.name.toLowerCase();
+
+                  return (
+                    searchTerm &&
+                    cityName.includes(searchTerm) &&
+                    cityName !== searchTerm
+                  );
+                })
+                .map((item) => (
+                  <div
+                    onClick={() => handleDestinationAutoSuggest(item.name)}
+                    className="dropdown-row"
+                    key={item.id}
+                  >
+                    {item.name}
+                  </div>
+                ))}
+            </div>
           </div>
+
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
             <span className="headerSearchText">Journey date</span>

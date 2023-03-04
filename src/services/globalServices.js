@@ -18,13 +18,6 @@ const validateSearch = (source, dest, deptDate, returnDate, selectTrip) => {
 };
 
 /**
-    thosand Separator for price of flight ticket
-   */
-const thousandSeparator = (x) => {
-  return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-};
-
-/**
     filter flight list by source and destination
    */
 const filterBySourceDest = (payload, response) => {
@@ -43,4 +36,4 @@ const filterBySourceDest = (payload, response) => {
   return resultArr;
 };
 
-export { validateSearch, thousandSeparator, filterBySourceDest };
+export { validateSearch, filterBySourceDest };

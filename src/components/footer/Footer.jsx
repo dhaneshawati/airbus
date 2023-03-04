@@ -16,11 +16,6 @@ const Footer = ({ flightArray }) => {
 
   return (
     <div className="footer">
-      {/* <img
-        src="https://media.istockphoto.com/id/1164049513/photo/airplane-taking-off-from-the-airport.jpg?s=612x612&w=0&k=20&c=nJm8C9OReeKktbMavXhP8O71cZ8AZx8RKiE-hK8TrWE="
-        alt="plane-cover"
-      /> */}
-      {/* <span className="text">Hello</span> */}
       <div className="text">
         {flightArray.map((val, index) => (
           <FlightItem key={index} flightData={val} bookNow={bookNow} />
