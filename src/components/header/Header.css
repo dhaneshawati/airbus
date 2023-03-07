@@ -99,10 +99,11 @@
     
 }
 .searchField{
-    position: fixed;
+    /* position: fixed; */
+    position: sticky;
     /* top: 0px; */
 }
-.headerSearchInput{
+.headerSearchInput{ 
     border: none;
     outline: none;
     color: black;

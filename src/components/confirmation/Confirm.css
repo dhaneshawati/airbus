@@ -11,7 +11,9 @@
     flex: 1;
     margin: auto;
     align-items: center;
-    
+    width: 50rem;
+    height: max-content;
+    /* border: 1px solid red; */
 }
 .headtitle{
    /* display: flex; */
@@ -32,10 +34,19 @@
 .connfirmDetails{
     font-size: large;
 }
+.overContain{
+    width: inherit;
+    height: max-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #aaaaaa;
+    background-color: #5ecbf3;
+}
 .details_Container{
    display: flex;
+   align-items: center;
+   justify-content: center;
    /* flex-direction: column; */
-   gap: 5rem;
+   gap: 10rem;
    padding: 10px;
     border-radius: 10px;
     /* box-shadow: 0px 0px 5px #aaaaaa; */
@@ -53,13 +64,7 @@ gap: 1.5rem;
     gap: 1.5rem;
 }
 
-.overContain{
-    width: max-content;
-    height: max-content;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px #aaaaaa;
-    background-color: #3A98B9;
-}
+
 .total{
     /* width: 480px; */
     /* height: auto; */

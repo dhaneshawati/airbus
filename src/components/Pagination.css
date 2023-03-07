@@ -2,8 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
     background-color: #ECF2FF;
+    position: relative;
+    top: -4rem;
     /* z-index: 5; */
 }
 
