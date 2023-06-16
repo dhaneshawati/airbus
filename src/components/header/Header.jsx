@@ -66,11 +66,12 @@ function Header() {
 
     navigate("/search");
   }
+
   return (
     <div className="header">
       <div className="headerContainer">
         <div className="headerList">
-          <div className="headerListItem active">
+          <div className="headerListItem active" id="flights">
             <FontAwesomeIcon icon={faPlaneDeparture} />
             <span>Flights</span>
           </div>
