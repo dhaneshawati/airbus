@@ -24,10 +24,18 @@
 }
 .navButton{
     margin-left: 20px;
-    background-color: white;
-    color: #003580;
-    padding: 5px 10px;
+    /* background-color: white;
+    color: #003580; */
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
     cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+.navButton:hover{
+    background-color: rgb(32, 32, 32);
 }
 
 .userInfo{
@@ -50,4 +58,63 @@
 .logout-btn{
     font-size: larger;
     cursor: pointer;
+}
+@media screen and (max-width: 425px){
+    .navbar{
+        height: fit-content;
+    }
+    .navContainer .logo{
+        font-size: medium;
+    }
+    .navContainer .navItems{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin: 1rem 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .navContainer .navItems .userInfo{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .navbar{
+        height: fit-content;
+    }
+    .navContainer .logo{
+        font-size: medium;
+    }
+    .navContainer .navItems{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin: 1rem 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .navContainer .navItems .userInfo{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .navbar{
+        height: fit-content;
+    }
+    .navContainer .logo{
+        font-size: medium;
+    }
+    .navContainer .navItems .userInfo{
+        margin-right: 1rem;
+    }
 }

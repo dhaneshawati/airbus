@@ -62,10 +62,10 @@ const Login = () => {
   };
   return (
     <div className=" bg-orange-400 w-[100vw] h-[100vh] contain">
-      <div className="w-[800px] h-[550px] m-auto">
-        <div className="absolute w-[800px] h-[550px] flex  m-auto">
+      <div className="w-[50rem] h-[34.375rem] m-auto">
+        <div className="absolute w-[50rem] h-[34.375rem] flex  m-auto">
           <div className="relative w-1/2 h-full flex flex-col mt-8 ml-32 shadow">
-            <div className="absolute top-[10%] left-[10%] flex flex-col ">
+            <div className="absolute top-[20%] left-[10%] flex flex-col ">
               <span className=" text-3xl font-bold text-amber-500  ">
                 Airbus
               </span>
@@ -82,7 +82,7 @@ const Login = () => {
             />
           </div>
 
-          <div className="w-1/2 h-full  bg-[#f5f5f5] flex flex-col p-10 justify-between mt-8 rounded-md">
+          <div className="w-1/2 h-full  bg-[#f5f5f5] flex flex-col p-10 justify-between mt-8 rounded-md mr-[10%]">
             <p className="mb-4 text-[#FF0000]">{error}</p>
 
             <div className="w-full flex flex-col  mx-auto">

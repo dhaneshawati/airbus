@@ -26,6 +26,9 @@ function Header() {
   const [destination, setDestination] = useState("");
   const [trip, setTrip] = useState("one");
   const [classType, setClassType] = useState("Economy");
+  const [clicked, setClicked] = useState(false);
+  const [isFlightSection, setIsFlightSection] = useState(true);
+
   const cities = [...CityJSON];
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -46,7 +49,21 @@ function Header() {
   function handleDestinationAutoSuggest(val) {
     setDestination(val);
   }
+  function handleClick(e) {
+    console.log(e.currentTarget);
+    console.log(e.target);
+    const activeElement = document.getElementsByClassName("active")[0];
+    console.log(activeElement);
+    console.log("Element id " + activeElement.id);
+    activeElement.classList.remove("active");
+    e.currentTarget.classList.add("active");
 
+    if (e.currentTarget.id === "flights") {
+      setIsFlightSection(true);
+    } else {
+      setIsFlightSection(false);
+    }
+  }
   function handleSearch() {
     const info = {
       source,
@@ -71,34 +88,50 @@ function Header() {
     <div className="header">
       <div className="headerContainer">
         <div className="headerList">
-          <div className="headerListItem active" id="flights">
+          <div
+            className="headerListItem active"
+            id="flights"
+            onClick={handleClick}
+          >
             <FontAwesomeIcon icon={faPlaneDeparture} />
             <span>Flights</span>
           </div>
-          <div className="headerListItem">
+          <div className="headerListItem" onClick={handleClick}>
             <FontAwesomeIcon icon={faBed} />
             <span>stays</span>
           </div>
-          <div className="headerListItem">
+          <div className="headerListItem" onClick={handleClick}>
             <FontAwesomeIcon icon={faCar} />
             <span>Car rentals</span>
           </div>
-          <div className="headerListItem">
+          <div className="headerListItem" onClick={handleClick}>
             <FontAwesomeIcon icon={faTaxi} />
             <span>Airport taxis</span>
           </div>
-          <div className="headerListItem">
+          <div className="headerListItem" onClick={handleClick}>
             <FontAwesomeIcon icon={faUtensils} />
             <span>Food</span>
           </div>
         </div>
-        <h1 className=" text-3xl font-bold headerTitle">
-          Book your flight tickets with complete security
-        </h1>
-        <p className="headerDescription">
-          Get security as well as cashback. Get rewarded for your travels each
-          time!
-        </p>
+        {isFlightSection ? (
+          <div className="sectionText">
+            <h1 className=" text-3xl font-bold headerTitle">
+              Book your flight tickets with complete security
+            </h1>
+            <p className="headerDescription">
+              Get security as well as cashback. Get rewarded for your travels
+              each time!
+            </p>
+          </div>
+        ) : (
+          <div className="sectionText">
+            <h1 className=" text-3xl font-bold headerTitle">Comming Soon...</h1>
+            <p className="headerDescription">
+              Stay tuned for launch of upcoming fetures and more rewards.
+            </p>
+          </div>
+        )}
+
         <div className="headerSearch">
           <div className="dropdown_container">
             <div className="headerSearchItem searchField">

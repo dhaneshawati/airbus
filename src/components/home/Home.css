@@ -1,6 +1,6 @@
 .home{
     width: 100%;
     /* max-width: 1024px; */
-    height: max-content;
+    height: fit-content;
  background-color: #ECF2FF;;
 }
